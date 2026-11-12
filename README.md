@@ -30,6 +30,14 @@ npm.cmd install --prefix .tools --cache .tools/npm-cache --no-audit --no-fund @o
 
 ## 使い方
 
+汎用の例（記事URLと上限の分数を指定）:
+
+```powershell
+.venv\Scripts\scenario-gen.exe "https://example.com/article" 3 -o narration.txt
+```
+
+実例（実在の記事を3分以内のナレーションにする）:
+
 ```powershell
 .venv\Scripts\scenario-gen.exe "https://jahic-etc.com/2026/10/29/jahic_26_10_29/" 3 -o narration.txt
 ```
@@ -54,6 +62,14 @@ Windowsのnpmラッパーはシェルを経由せず、付属するネイティ�
 保存先・文字数・推定時間はコンソールに表示します。
 
 ## 2人の掛け合い（3分以内）
+
+汎用の例:
+
+```powershell
+.venv\Scripts\scenario-gen.exe "https://example.com/article" 3 --dialogue -o dialogue.txt
+```
+
+実例:
 
 ```powershell
 .venv\Scripts\scenario-gen.exe "https://jahic-etc.com/2026/10/29/jahic_26_10_29/" 3 --dialogue -o dialogue.txt
